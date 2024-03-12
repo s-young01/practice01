@@ -68,3 +68,54 @@ nav {
   width: 100%;
   margin-bottom: -5px;
 }
+
+/* 메인 */
+.contents {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 100px;
+  padding: 120px 0;
+}
+article {
+  display: flex;
+  align-items: center;
+  gap: 157px;
+}
+article h3 {
+  font-size: 48px;
+}
+/* 그라데이션 */
+.gradient-1 {
+  background: linear-gradient(96deg, #FE8A8A 1.72%, #A4CEFF 74.97%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.gradient-2 {
+  background: linear-gradient(277deg, #6FBAFF 59.22%, #FFD88B 93.66%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.gradient-3 {
+  background: linear-gradient(99deg, #6D7CCD 19.76%, rgba(82, 136, 133, 0.22) 52.69%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.gradient-4 {
+  background: var(--Fandom-K-gra-blue-to-pink, linear-gradient(271deg, #FE578F -9.84%, #68E8F9 107.18%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+article p {
+  font-size: 16px;
+  color: var(--Linkbrary-gray60);
+}
+article img {
+  width: 550px;
+  height: 450px;
+}
