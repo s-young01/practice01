@@ -43,8 +43,12 @@ nav {
 }
 .banner h2 {
   text-align: center;
-  font-size: 46px;
+  font-size: 64px;
   font-weight: 700;
+  margin-top: 70px;
+}
+.banner h2 .show {
+  display: none;
 }
 .banner span {
   background: linear-gradient(91deg, #6D6AFE 17.28%, #FF9F9F 74.98%);
@@ -54,7 +58,6 @@ nav {
 }
 .banner a {
   width: 350px;
-  height: 54px;
   padding: 16px 20px;
   border-radius: 8px;
   text-align: center;
@@ -83,6 +86,15 @@ article {
   display: flex;
   align-items: center;
   gap: 157px;
+}
+.reverse {
+  display: flex;
+  flex-direction: row-reverse;
+}
+article div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 article h3 {
   font-size: 48px;
@@ -137,6 +149,9 @@ footer {
 footer span {
   color: var(--Linkbrary-gray20);
 }
+.gray-60 {
+  color: var(--Linkbrary-gray60);
+}
 .site-info {
   display: flex;
   gap: 30px;
@@ -144,4 +159,97 @@ footer span {
 .sns-link {
   display: flex;
   gap: 12px;
+}
+
+/* 반응형 */
+
+/* 태블릿 */
+@media (max-width: 1190px) {
+  /* 헤더 */
+  nav {
+    max-width: 799px;
+  }
+
+  /* 베너 */
+  .banner h2 {
+    margin-top: 39px;
+  }
+  .banner h2 .show {
+    display: block;
+  }
+  .banner .banner_image {
+    max-width: 650px;
+    min-width: 302px;
+  }
+
+  /* 메인 */
+  article {
+    gap: 51px;
+  }
+  article img {
+    width: 385px;
+    height: 315px;
+  }
+
+  /* 푸터 */
+  .footer {
+    max-width: 799px;
+  }
+}
+
+/* 모바일 */
+@media (max-width: 412px) {
+  /* 헤더 */
+  nav {
+    max-width: 326px;
+  }
+
+  /* 베너 */
+  .banner h2 {
+    font-size: 32px;
+    margin-top: 28px;
+  }
+  .banner h2 .show {
+    display: block;
+  }
+  .banner a {
+    width: 200px;
+    padding: 10px 16px;
+  }
+  .banner .banner_image {
+    max-width: 302px;
+  }
+
+  /* 메인 */
+  article {
+    max-width: 325px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+  }
+  .reverse {
+    flex-direction: column;
+  }
+  article h3 {
+    font-size: 24px;
+  }
+  article h3 .none {
+    display: none;
+  }
+  article img {
+    width: 325px;
+    height: 265px;
+  }
+  article p {
+    font-size: 15px;
+  }
+  article p .none {
+    display: none;
+  }
+
+  /* 푸터 */
+  .footer {
+    max-width: 326px;
+    height: 160px;
+  }
 }
